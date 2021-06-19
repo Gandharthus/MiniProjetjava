@@ -5,8 +5,9 @@ import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 
-
+//test comment for push
 public class Main extends Application {
+	private String test_variable;
 	@Override
 	public void start(Stage primaryStage) {
 		try {
