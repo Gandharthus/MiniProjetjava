@@ -1,0 +1,2 @@
+# MiniProjetjava
+School project 
