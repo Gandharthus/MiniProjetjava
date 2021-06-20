@@ -3,7 +3,9 @@ module MiniProjetJava {
 	requires java.sql;
 	requires javafx.fxml;
 	
-	opens Controller to javafx.fxml;
-	opens entities to java.sql,java.util;
+	
+	
+	opens controller to javafx.fxml;
+	opens entities to java.sql,java.util,java.time;
 	opens application to javafx.graphics, javafx.fxml;
 }
