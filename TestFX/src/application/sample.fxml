@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="649.0" prefWidth="1087.0" style="-fx-background-color: #2F2B43;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+   <children>
+      <AnchorPane prefHeight="519.0" prefWidth="262.0" style="-fx-background-color: #393351;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox layoutY="160.0" prefHeight="356.0" prefWidth="262.0" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="160.0">
+               <children>
+                  <Button fx:id="articleBtn" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="49.0" prefWidth="262.0" styleClass="button1" stylesheets="@../assets/css/fullpackstyling.css" text="Articles" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/resources/article.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="clientBtn" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="49.0" prefWidth="262.0" styleClass="button1" stylesheets="@../assets/css/fullpackstyling.css" text="Clients" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/resources/client.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding></Button>
+                  <Button fx:id="commandeBtn" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="49.0" prefWidth="262.0" styleClass="button1" stylesheets="@../assets/css/fullpackstyling.css" text="Commandes" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/resources/commande.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="ligneBtn" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="49.0" prefWidth="262.0" styleClass="button1" stylesheets="@../assets/css/fullpackstyling.css" text="Lignes" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/resources/icons8_Shopping_Cart_50px_2.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </VBox>
+            <Pane layoutY="86.0" prefHeight="61.0" prefWidth="262.0" style="-fx-background-color: #FA2C56; -fx-background-radius: 5;">
+               <children>
+                  <Label layoutX="25.0" layoutY="17.0" text="ENSAM Store" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children></AnchorPane>
+      <Pane layoutX="262.0" prefHeight="649.0" prefWidth="631.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="262.0" AnchorPane.rightAnchor="-4.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="-25.0" layoutY="-178.0" prefHeight="303.0" prefWidth="467.0" rotate="41.6" style="-fx-background-color: #FA2C56; -fx-background-radius: 70;">
+               <children>
+                  <ImageView fitHeight="92.0" fitWidth="136.0" layoutX="239.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/resources/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="193.0" layoutY="271.0" text="Welcome to ENSAM Store" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <VBox layoutX="55.0" layoutY="238.0" prefHeight="393.0" prefWidth="748.0">
+               <children>
+                  <StackPane>
+                     <children>
+                        <GridPane fx:id="clientPn" prefHeight="417.0" prefWidth="750.0" style="-fx-background-color: #2F2B43 #2F2B43;">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="101.0" minHeight="10.0" prefHeight="40.63360595703125" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="270.32911682128906" minHeight="10.0" prefHeight="269.36639404296875" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <HBox>
+                                 <children>
+                                    <Label fx:id="ongletName1" prefHeight="27.0" prefWidth="137.0" text="Clients" textFill="WHITE">
+                                       <font>
+                                          <Font size="21.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="24.0" prefWidth="525.0" spacing="3.0">
+                                 <children>
+                                    <TextField fx:id="searchClient" prefHeight="25.0" prefWidth="241.0" promptText="Rechercher client par ID" />
+                                    <Pane layoutX="254.0" layoutY="10.0" prefHeight="94.0" prefWidth="87.0">
+                                       <children>
+                                          <Circle layoutX="43.0" layoutY="31.0" radius="27.0" strokeType="INSIDE">
+                                             <stroke>
+                                                <LinearGradient endX="1.0" endY="1.0">
+                                                   <stops>
+                                                      <Stop color="BLACK" />
+                                                      <Stop color="WHITE" offset="1.0" />
+                                                   </stops>
+                                                </LinearGradient>
+                                             </stroke>
+                                             <fill>
+                                                <LinearGradient endX="1.0" endY="1.0" startY="0.4952380952380952">
+                                                   <stops>
+                                                      <Stop color="#68479f" />
+                                                      <Stop color="WHITE" offset="1.0" />
+                                                   </stops>
+                                                </LinearGradient>
+                                             </fill>
+                                          </Circle>
+                                          <ImageView fitHeight="43.0" fitWidth="59.0" layoutX="14.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../assets/resources/search.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label alignment="CENTER" layoutX="9.0" layoutY="59.0" prefHeight="17.0" prefWidth="75.0" text="Rechercher" textFill="WHITE">
+                                             <font>
+                                                <Font name="Arial Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Button fx:id="searchClientButton" mnemonicParsing="false" onAction="#handleClicks" opacity="0.0" prefHeight="78.0" prefWidth="87.0" styleClass="button2" stylesheets="@../assets/css/fullpackstyling.css" />
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="94.0" prefWidth="87.0">
+                                       <children>
+                                          <Circle layoutX="43.0" layoutY="31.0" radius="27.0" strokeType="INSIDE">
+                                             <stroke>
+                                                <LinearGradient endX="1.0" endY="1.0">
+                                                   <stops>
+                                                      <Stop color="BLACK" />
+                                                      <Stop color="WHITE" offset="1.0" />
+                                                   </stops>
+                                                </LinearGradient>
+                                             </stroke>
+                                             <fill>
+                                                <LinearGradient endX="1.0" endY="1.0" startY="0.4952380952380952">
+                                                   <stops>
+                                                      <Stop color="#68479f" />
+                                                      <Stop color="WHITE" offset="1.0" />
+                                                   </stops>
+                                                </LinearGradient>
+                                             </fill>
+                                          </Circle>
+                                          <ImageView fitHeight="43.0" fitWidth="34.0" layoutX="26.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../assets/resources/add.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label alignment="CENTER" layoutX="9.0" layoutY="59.0" prefHeight="17.0" prefWidth="66.0" text="Ajouter" textFill="WHITE">
+                                             <font>
+                                                <Font name="Arial Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Button fx:id="addClient" mnemonicParsing="false" onAction="#handleClicks" opacity="0.0" prefHeight="78.0" prefWidth="87.0" styleClass="button2" stylesheets="@../assets/css/fullpackstyling.css" />
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </HBox>
+                              <StackPane prefHeight="369.0" prefWidth="748.0" GridPane.rowIndex="1">
+                                 <children>
+                                    <Pane fx:id="addClientPn" prefHeight="248.0" prefWidth="748.0" style="-fx-background-color: #2F2B43 #2F2B43; -fx-border-color: white; -fx-border-radius: 5px;">
+                                       <children>
+                                          <TextField fx:id="idClientField" layoutX="55.0" layoutY="48.0" />
+                                          <TextField fx:id="ageField" layoutX="55.0" layoutY="123.0" />
+                                          <TextField fx:id="nomField" layoutX="300.0" layoutY="48.0" />
+                                          <TextField fx:id="villeField" layoutX="300.0" layoutY="123.0" />
+                                          <Label layoutX="55.0" layoutY="25.0" text="idClient" textFill="WHITE" />
+                                          <Label layoutX="302.0" layoutY="98.0" text="Ville" textFill="WHITE" />
+                                          <Label layoutX="54.0" layoutY="98.0" text="Age" textFill="WHITE" />
+                                          <Label layoutX="300.0" layoutY="25.0" text="Nom" textFill="WHITE" />
+                                          <Button fx:id="addClientSubmit" layoutX="617.0" layoutY="225.0" mnemonicParsing="false" onAction="#handleClicks" text="Confirmer" />
+                                          <TextField fx:id="prenomField" layoutX="535.0" layoutY="48.0" />
+                                          <TextField fx:id="adresseField" layoutX="537.0" layoutY="123.0" />
+                                          <TextField fx:id="mailField" layoutX="55.0" layoutY="200.0" />
+                                          <Label layoutX="537.0" layoutY="25.0" text="Prenom" textFill="WHITE" />
+                                          <Label layoutX="53.0" layoutY="175.0" text="Mail" textFill="WHITE" />
+                                          <Label layoutX="537.0" layoutY="98.0" text="Adresse" textFill="WHITE" />
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="updateClientPn" layoutX="10.0" layoutY="10.0" prefHeight="248.0" prefWidth="748.0" style="-fx-background-color: #2F2B43 #2F2B43; -fx-border-color: white; -fx-border-radius: 5px;">
+                                       <children>
+                                          <TextField fx:id="idClientUpdateField" layoutX="55.0" layoutY="48.0" />
+                                          <TextField fx:id="ageUpdateField" layoutX="55.0" layoutY="123.0" />
+                                          <TextField fx:id="nomUpdateField" layoutX="300.0" layoutY="48.0" />
+                                          <TextField fx:id="villeUpdateField" layoutX="300.0" layoutY="123.0" />
+                                          <Label layoutX="55.0" layoutY="25.0" text="idClient" textFill="WHITE" />
+                                          <Label layoutX="302.0" layoutY="98.0" text="Ville" textFill="WHITE" />
+                                          <Label layoutX="54.0" layoutY="98.0" text="Age" textFill="WHITE" />
+                                          <Label layoutX="300.0" layoutY="25.0" text="Nom" textFill="WHITE" />
+                                          <Button fx:id="updateClientSubmit" layoutX="617.0" layoutY="225.0" mnemonicParsing="false" onAction="#handleClicks" text="Confirmer" />
+                                          <TextField fx:id="prenomUpdateField" layoutX="535.0" layoutY="48.0" />
+                                          <TextField fx:id="adresseUpdateField" layoutX="537.0" layoutY="123.0" />
+                                          <TextField fx:id="mailUpdateField" layoutX="55.0" layoutY="200.0" />
+                                          <Label layoutX="537.0" layoutY="25.0" text="Prenom" textFill="WHITE" />
+                                          <Label layoutX="53.0" layoutY="175.0" text="Mail" textFill="WHITE" />
+                                          <Label layoutX="537.0" layoutY="98.0" text="Adresse" textFill="WHITE" />
+                                       </children>
+                                    </Pane>
+                                    <TableView fx:id="clientsTable" prefHeight="348.0" prefWidth="748.0">
+                                       <columns>
+                                          <TableColumn fx:id="idClient" prefWidth="75.0" text="Id_Client" />
+                                          <TableColumn fx:id="nom" prefWidth="75.0" text="Nom" />
+                                          <TableColumn fx:id="prenom" prefWidth="75.0" text="Prenom" />
+                                          <TableColumn fx:id="age" prefWidth="75.0" text="Age" />
+                                          <TableColumn fx:id="adresse" prefWidth="75.0" text="Adresse" />
+                                          <TableColumn fx:id="ville" prefWidth="75.0" text="Ville" />
+                                          <TableColumn fx:id="mail" prefWidth="75.0" text="Mail" />
+                                          <TableColumn fx:id="clientModify" prefWidth="75.0" />
+                                          <TableColumn fx:id="clientDelete" prefWidth="75.0" />
+                                       </columns>
+                                       <columnResizePolicy>
+                                          <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                       </columnResizePolicy>
+                                    </TableView>
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </GridPane>
+                        <GridPane fx:id="commandePn" prefHeight="417.0" prefWidth="750.0" style="-fx-background-color: #2F2B43 #2F2B43;">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="101.0" minHeight="10.0" prefHeight="40.63360595703125" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="270.32911682128906" minHeight="10.0" prefHeight="269.36639404296875" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <HBox>
+                                 <children>
+                                    <Label fx:id="ongletName3" prefHeight="27.0" prefWidth="137.0" text="Commandes" textFill="WHITE">
+                                       <font>
+                                          <Font size="21.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="24.0" prefWidth="525.0" spacing="3.0">
+                                 <children>
+                                    <Pane prefHeight="94.0" prefWidth="87.0" translateX="200.0">
+                                       <children>
+                                          <Circle layoutX="43.0" layoutY="31.0" radius="27.0" strokeType="INSIDE">
+                                             <stroke>
+                                                <LinearGradient endX="1.0" endY="1.0">
+                                                   <stops>
+                                                      <Stop color="BLACK" />
+                                                      <Stop color="WHITE" offset="1.0" />
+                                                   </stops>
+                                                </LinearGradient>
+                                             </stroke>
+                                             <fill>
+                                                <LinearGradient endX="1.0" endY="1.0" startY="0.4952380952380952">
+                                                   <stops>
+                                                      <Stop color="#68479f" />
+                                                      <Stop color="WHITE" offset="1.0" />
+                                                   </stops>
+                                                </LinearGradient>
+                                             </fill>
+                                          </Circle>
+                                          <ImageView fitHeight="43.0" fitWidth="34.0" layoutX="26.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../assets/resources/add.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label alignment="CENTER" layoutX="-20.0" layoutY="59.0" prefHeight="17.0" prefWidth="130.0" text="Passer Commande" textFill="WHITE">
+                                             <font>
+                                                <Font name="Arial Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Button fx:id="addCommande" mnemonicParsing="false" onAction="#handleClicks" opacity="0.0" prefHeight="78.0" prefWidth="87.0" styleClass="button2" stylesheets="@../assets/css/fullpackstyling.css" />
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </HBox>
+                              <StackPane GridPane.rowIndex="1">
+                                 <children>
+                                    <Pane fx:id="addCommandePn" prefHeight="248.0" prefWidth="748.0" style="-fx-background-color: #2F2B43 #2F2B43; -fx-border-color: white; -fx-border-radius: 5px;">
+                                       <children>
+                                          <TextField fx:id="idCommField" layoutX="55.0" layoutY="48.0" />
+                                          <TextField fx:id="anneeField" layoutX="55.0" layoutY="123.0" prefHeight="25.0" prefWidth="62.0" />
+                                          <TextField fx:id="idClientCommField" layoutX="334.0" layoutY="48.0" />
+                                          <Label layoutX="55.0" layoutY="25.0" text="idComm" textFill="WHITE" />
+                                          <Label layoutX="54.0" layoutY="148.0" text="Annee" textFill="WHITE" />
+                                          <Label layoutX="55.0" layoutY="106.0" text="Date" textFill="WHITE" />
+                                          <Label layoutX="334.0" layoutY="27.0" text="idClient" textFill="WHITE" />
+                                          <Button fx:id="addCommandeSubmit" layoutX="414.0" layoutY="212.0" mnemonicParsing="false" onAction="#handleClicks" text="Confirmer" />
+                                          <TextField fx:id="moisField" layoutX="129.0" layoutY="123.0" prefHeight="25.0" prefWidth="62.0" />
+                                          <TextField fx:id="jourField" layoutX="204.0" layoutY="123.0" prefHeight="25.0" prefWidth="62.0" />
+                                          <Label layoutX="129.0" layoutY="148.0" text="Mois" textFill="WHITE" />
+                                          <Label layoutX="204.0" layoutY="148.0" text="Jour" textFill="WHITE" />
+                                       </children>
+                                    </Pane>
+                                    <TableView fx:id="commandsTable" prefHeight="348.0" prefWidth="748.0">
+                                       <columns>
+                                          <TableColumn fx:id="idComm" prefWidth="75.0" text="Id_comm" />
+                                          <TableColumn fx:id="idClientComm" prefWidth="75.0" text="id_client" />
+                                          <TableColumn fx:id="colDate" prefWidth="75.0" text="date" />
+                                          <TableColumn fx:id="commandeModify" prefWidth="75.0" />
+                                          <TableColumn fx:id="commandeDelete" prefWidth="75.0" />
+                                       </columns>
+                                       <columnResizePolicy>
+                                          <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                       </columnResizePolicy>
+                                    </TableView>
+                                    <Pane fx:id="updateCommandePn" prefHeight="248.0" prefWidth="748.0" style="-fx-background-color: #2F2B43 #2F2B43; -fx-border-color: white; -fx-border-radius: 5px;">
+                                       <children>
+                                          <TextField fx:id="idCommUpdateField" layoutX="55.0" layoutY="48.0" />
+                                          <TextField fx:id="anneeUpdateField" layoutX="55.0" layoutY="123.0" prefHeight="25.0" prefWidth="62.0" />
+                                          <TextField fx:id="idClientCommUpdateField" layoutX="334.0" layoutY="48.0" />
+                                          <Label layoutX="55.0" layoutY="25.0" text="idComm" textFill="WHITE" />
+                                          <Label layoutX="54.0" layoutY="148.0" text="Annee" textFill="WHITE" />
+                                          <Label layoutX="55.0" layoutY="106.0" text="Date" textFill="WHITE" />
+                                          <Label layoutX="334.0" layoutY="27.0" text="idClient" textFill="WHITE" />
+                                          <Button fx:id="updateCommandeSubmit" layoutX="414.0" layoutY="212.0" mnemonicParsing="false" onAction="#handleClicks" text="Confirmer" />
+                                          <TextField fx:id="moisUpdateField" layoutX="129.0" layoutY="123.0" prefHeight="25.0" prefWidth="62.0" />
+                                          <TextField fx:id="jourUpdateField" layoutX="204.0" layoutY="123.0" prefHeight="25.0" prefWidth="62.0" />
+                                          <Label layoutX="129.0" layoutY="148.0" text="Mois" textFill="WHITE" />
+                                          <Label layoutX="204.0" layoutY="148.0" text="Jour" textFill="WHITE" />
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </GridPane>
+                        <GridPane fx:id="lignePn" prefHeight="310.0" prefWidth="525.0" style="-fx-background-color: #2F2B43 #2F2B43;">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="101.0" minHeight="10.0" prefHeight="40.63360595703125" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="270.32911682128906" minHeight="10.0" prefHeight="269.36639404296875" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <HBox>
+                                 <children>
+                                    <Label fx:id="ongletName2" prefHeight="27.0" prefWidth="137.0" text="Lignes" textFill="WHITE">
+                                       <font>
+                                          <Font size="21.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="24.0" prefWidth="525.0" spacing="3.0">
+                                 <children>
+                                    <Pane prefHeight="74.0" prefWidth="200.0" />
+                                    <Pane prefHeight="94.0" prefWidth="87.0">
+                                       <children>
+                                          <Circle layoutX="43.0" layoutY="31.0" radius="27.0" strokeType="INSIDE">
+                                             <stroke>
+                                                <LinearGradient endX="1.0" endY="1.0">
+                                                   <stops>
+                                                      <Stop color="BLACK" />
+                                                      <Stop color="WHITE" offset="1.0" />
+                                                   </stops>
+                                                </LinearGradient>
+                                             </stroke>
+                                             <fill>
+                                                <LinearGradient endX="1.0" endY="1.0" startY="0.4952380952380952">
+                                                   <stops>
+                                                      <Stop color="#68479f" />
+                                                      <Stop color="WHITE" offset="1.0" />
+                                                   </stops>
+                                                </LinearGradient>
+                                             </fill>
+                                          </Circle>
+                                          <ImageView fitHeight="43.0" fitWidth="34.0" layoutX="26.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../assets/resources/add.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label alignment="CENTER" layoutX="9.0" layoutY="59.0" prefHeight="17.0" prefWidth="66.0" text="Ajouter" textFill="WHITE">
+                                             <font>
+                                                <Font name="Arial Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Button fx:id="addLigne" mnemonicParsing="false" onAction="#handleClicks" opacity="0.0" prefHeight="78.0" prefWidth="87.0" styleClass="button2" stylesheets="@../assets/css/fullpackstyling.css" />
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </HBox>
+                              <StackPane GridPane.rowIndex="1">
+                                 <children>
+                                    <Pane fx:id="addLignePn" prefHeight="248.0" prefWidth="748.0" style="-fx-background-color: #2F2B43 #2F2B43; -fx-border-color: white; -fx-border-radius: 5px;">
+                                       <children>
+                                          <TextField fx:id="idCommLigneField" layoutX="55.0" layoutY="48.0" />
+                                          <TextField fx:id="prixUniteField" layoutX="55.0" layoutY="123.0" prefHeight="25.0" prefWidth="149.0" />
+                                          <TextField fx:id="idArticleLigneField" layoutX="334.0" layoutY="48.0" />
+                                          <Label layoutX="55.0" layoutY="25.0" text="idComm" textFill="WHITE" />
+                                          <Label layoutX="55.0" layoutY="106.0" text="PrixUnite" textFill="WHITE" />
+                                          <Label layoutX="334.0" layoutY="27.0" text="idArticle" textFill="WHITE" />
+                                          <Button fx:id="addLigneSubmit" layoutX="414.0" layoutY="212.0" mnemonicParsing="false" onAction="#handleClicks" text="Confirmer" />
+                                          <TextField fx:id="quantiteField" layoutX="334.0" layoutY="123.0" prefHeight="25.0" prefWidth="149.0" />
+                                          <Label layoutX="334.0" layoutY="106.0" text="Quantite" textFill="WHITE" />
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="updateLignePn" layoutX="10.0" layoutY="10.0" prefHeight="248.0" prefWidth="748.0" style="-fx-background-color: #2F2B43 #2F2B43; -fx-border-color: white; -fx-border-radius: 5px;">
+                                       <children>
+                                          <TextField fx:id="idCommLigneUpdateField" layoutX="55.0" layoutY="48.0" />
+                                          <TextField fx:id="prixUniteUpdateField" layoutX="55.0" layoutY="123.0" prefHeight="25.0" prefWidth="149.0" />
+                                          <TextField fx:id="idArticleLigneUpdateField" layoutX="334.0" layoutY="48.0" />
+                                          <Label layoutX="55.0" layoutY="25.0" text="idComm" textFill="WHITE" />
+                                          <Label layoutX="55.0" layoutY="106.0" text="PrixUnite" textFill="WHITE" />
+                                          <Label layoutX="334.0" layoutY="27.0" text="idArticle" textFill="WHITE" />
+                                          <Button fx:id="updateLigneSubmit" layoutX="414.0" layoutY="212.0" mnemonicParsing="false" onAction="#handleClicks" text="Confirmer" />
+                                          <TextField fx:id="quantiteUpdateField" layoutX="334.0" layoutY="123.0" prefHeight="25.0" prefWidth="149.0" />
+                                          <Label layoutX="334.0" layoutY="106.0" text="Quantite" textFill="WHITE" />
+                                       </children>
+                                    </Pane>
+                                    <TableView fx:id="ligneTable" prefHeight="234.0" prefWidth="525.0">
+                                       <columns>
+                                          <TableColumn fx:id="idCommLigne" prefWidth="75.0" text="Id_Commande" />
+                                          <TableColumn fx:id="idArticleLigne" prefWidth="75.0" text="Id_article" />
+                                          <TableColumn fx:id="quantite" prefWidth="75.0" text="Quantité " />
+                                          <TableColumn fx:id="prixUnite" prefWidth="75.0" text="Prix unitaire" />
+                                          <TableColumn fx:id="ligneModify" prefWidth="75.0" />
+                                          <TableColumn fx:id="ligneDelete" prefWidth="75.0" />
+                                       </columns>
+                                       <columnResizePolicy>
+                                          <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                       </columnResizePolicy>
+                                    </TableView>
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </GridPane>
+                        <GridPane fx:id="articlePn" prefHeight="310.0" prefWidth="525.0" style="-fx-background-color: #2F2B43 #2F2B43;">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="101.0" minHeight="10.0" prefHeight="40.63360595703125" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="270.32911682128906" minHeight="10.0" prefHeight="269.36639404296875" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <HBox>
+                                 <children>
+                                    <Label fx:id="ongletName" prefHeight="27.0" prefWidth="137.0" text="Articles" textFill="WHITE">
+                                       <font>
+                                          <Font size="21.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="24.0" prefWidth="525.0" spacing="3.0">
+                                 <children>
+                                    <TextField fx:id="searchArticle" prefHeight="25.0" prefWidth="241.0" promptText="Rechercher article par ID" />
+                                    <Pane prefHeight="94.0" prefWidth="87.0">
+                                       <children>
+                                          <Circle layoutX="53.0" layoutY="46.0" radius="27.0" strokeType="INSIDE">
+                                             <stroke>
+                                                <LinearGradient endX="1.0" endY="1.0">
+                                                   <stops>
+                                                      <Stop color="BLACK" />
+                                                      <Stop color="WHITE" offset="1.0" />
+                                                   </stops>
+                                                </LinearGradient>
+                                             </stroke>
+                                             <fill>
+                                                <LinearGradient endX="1.0" endY="1.0" startY="0.4952380952380952">
+                                                   <stops>
+                                                      <Stop color="#68479f" />
+                                                      <Stop color="WHITE" offset="1.0" />
+                                                   </stops>
+                                                </LinearGradient>
+                                             </fill>
+                                          </Circle>
+                                          <ImageView fitHeight="43.0" fitWidth="59.0" layoutX="23.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../assets/resources/search.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label alignment="CENTER" layoutX="15.0" layoutY="70.0" prefHeight="17.0" prefWidth="75.0" text="Rechercher" textFill="WHITE">
+                                             <font>
+                                                <Font name="Arial Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Button fx:id="searchArticleButton" layoutX="9.0" layoutY="12.0" mnemonicParsing="false" onAction="#handleClicks" opacity="0.0" prefHeight="78.0" prefWidth="87.0" styleClass="button2" stylesheets="@../assets/css/fullpackstyling.css" />
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="94.0" prefWidth="87.0">
+                                       <children>
+                                          <Circle fx:id="" layoutX="43.0" layoutY="31.0" radius="27.0" strokeType="INSIDE">
+                                             <stroke>
+                                                <LinearGradient endX="1.0" endY="1.0">
+                                                   <stops>
+                                                      <Stop color="BLACK" />
+                                                      <Stop color="WHITE" offset="1.0" />
+                                                   </stops>
+                                                </LinearGradient>
+                                             </stroke>
+                                             <fill>
+                                                <LinearGradient endX="1.0" endY="1.0" startY="0.4952380952380952">
+                                                   <stops>
+                                                      <Stop color="#68479f" />
+                                                      <Stop color="WHITE" offset="1.0" />
+                                                   </stops>
+                                                </LinearGradient>
+                                             </fill>
+                                          </Circle>
+                                          <ImageView fitHeight="43.0" fitWidth="34.0" layoutX="26.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../assets/resources/add.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label alignment="CENTER" layoutX="9.0" layoutY="59.0" prefHeight="17.0" prefWidth="66.0" text="Ajouter" textFill="WHITE">
+                                             <font>
+                                                <Font name="Arial Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Button fx:id="addArticle" mnemonicParsing="false" onAction="#handleClicks" opacity="0.0" prefHeight="78.0" prefWidth="87.0" styleClass="button2" stylesheets="@../assets/css/fullpackstyling.css" />
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Pane>
+                                 </children>
+                              </HBox>
+                              <StackPane GridPane.rowIndex="1">
+                                 <children>
+                                    <Pane fx:id="updateArticlePn" prefHeight="248.0" prefWidth="748.0" style="-fx-background-color: #2F2B43 #2F2B43; -fx-border-color: white; -fx-border-radius: 5px;">
+                                       <children>
+                                          <TextField fx:id="idArticleUpdateField" layoutX="55.0" layoutY="48.0" />
+                                          <TextField fx:id="prixUpdateField" layoutX="55.0" layoutY="123.0" />
+                                          <TextField fx:id="designUpdateField" layoutX="334.0" layoutY="48.0" />
+                                          <TextField fx:id="catUpdateField" layoutX="334.0" layoutY="123.0" />
+                                          <Label layoutX="55.0" layoutY="25.0" text="idArticle" textFill="WHITE" />
+                                          <Label layoutX="334.0" layoutY="106.0" text="Categorie" textFill="WHITE" />
+                                          <Label layoutX="55.0" layoutY="106.0" text="Prix" textFill="WHITE" />
+                                          <Label layoutX="334.0" layoutY="27.0" text="designation" textFill="WHITE" />
+                                          <Button fx:id="updateArticleSubmit" layoutX="414.0" layoutY="212.0" mnemonicParsing="false" onAction="#handleClicks" text="Confirmer" />
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="addArticlePn" prefHeight="248.0" prefWidth="748.0" style="-fx-background-color: #2F2B43 #2F2B43; -fx-border-color: white; -fx-border-radius: 5px;">
+                                       <children>
+                                          <TextField fx:id="idArticleField" layoutX="55.0" layoutY="48.0" />
+                                          <TextField fx:id="prixField" layoutX="55.0" layoutY="123.0" />
+                                          <TextField fx:id="designField" layoutX="334.0" layoutY="48.0" />
+                                          <TextField fx:id="catField" layoutX="334.0" layoutY="123.0" />
+                                          <Label layoutX="55.0" layoutY="25.0" text="idArticle" textFill="WHITE" />
+                                          <Label layoutX="334.0" layoutY="106.0" text="Categorie" textFill="WHITE" />
+                                          <Label layoutX="55.0" layoutY="106.0" text="Prix" textFill="WHITE" />
+                                          <Label layoutX="334.0" layoutY="27.0" text="designation" textFill="WHITE" />
+                                          <Button fx:id="addArticleSubmit" layoutX="414.0" layoutY="212.0" mnemonicParsing="false" onAction="#handleClicks" text="Confirmer" />
+                                       </children>
+                                    </Pane>
+                                    <TableView fx:id="articlesTable" prefHeight="234.0" prefWidth="525.0">
+                                       <columns>
+                                          <TableColumn fx:id="idArticle" prefWidth="75.0" text="Id_Article" />
+                                          <TableColumn fx:id="design" prefWidth="75.0" text="Design" />
+                                          <TableColumn fx:id="prix" prefWidth="75.0" text="Prix" />
+                                          <TableColumn fx:id="categorie" prefWidth="75.0" text="Categorie" />
+                                          <TableColumn fx:id="articleModify" prefWidth="75.0" />
+                                          <TableColumn fx:id="articleDelete" prefWidth="75.0" />
+                                       </columns>
+                                       <columnResizePolicy>
+                                          <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                       </columnResizePolicy>
+                                    </TableView>
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </StackPane>
+               </children>
+            </VBox>
+            <Pane layoutX="537.0" layoutY="53.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="52.0" layoutY="36.0" text="Created by" textFill="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="23.0" layoutY="80.0" prefHeight="32.0" prefWidth="104.0" text="ALOUI Yahya" textFill="#fffefe" />
+                  <Label layoutX="29.0" layoutY="129.0" text="MAKOUAR Ali" textFill="#fffdfd" />
+                  <Label layoutX="68.0" layoutY="106.0" text="KHALLOUK Soufiane" textFill="WHITE" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
